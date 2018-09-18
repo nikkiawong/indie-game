@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container, .background, .overlay  {
+  height: 100%;
+  min-height: 100%;
+}
+
+html>body .container, html>body .background, html>body .overlay {
+  height: auto;
+}
+
+.background {
+  background: url("../img/hero-bg.jpg") center center no-repeat fixed #000;
+  background-size: cover;
+}
+
+.overlay {
+  background: url("../img/hero-overlay.png") center center no-repeat;
+  background-size: cover;
+}

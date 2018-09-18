@@ -2,6 +2,11 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Frijole|Josefin+Sans:300" rel="stylesheet">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <script
+  src="https://code.jquery.com/jquery-3.1.0.js"
+  integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+  crossorigin="anonymous">
+</script>
     <title>The Way Out</title>
   </head>
   <body>
@@ -15,7 +20,7 @@
             <div class="hero-content">
               <h1>The Way Out</h1>
               <div class="timer-output">
-
+                <h2>time</h2>
               </div>
               <h3>Sign Up for Updates</h3>
               <form action="index.html" method="post">
@@ -33,13 +38,15 @@
             </div>
           </div>
           <div class="scroll">
-            <p>scroll</p>
-            <i class="small material-icons">arrow_downward</i>
+            <a href="#news">
+              <p>scroll</p>
+              <i class="small material-icons">arrow_downward</i>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="news-wrap">
+    <div id="news" class="news-wrap">
       <div class="container news-box">
         <div class="row news-header">
           <h3>Latest News</h3>

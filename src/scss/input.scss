@@ -23,6 +23,10 @@ h1 {
   line-height: 98px;
 }
 
+.col {
+  margin: 12px;
+}
+
 .background {
   background: url("../img/hero-bg.jpg") center center no-repeat fixed #000;
   background-size: cover;
@@ -82,4 +86,79 @@ h1 {
   left: 50%;
   color: white;
   transform: translate(-50%);
+}
+
+.news-box, .feature-box {
+  padding-top: 82px;
+  padding-bottom: 82px;
+}
+
+.news-header {
+  padding-bottom: 22px;
+}
+
+.title-wrap {
+  border-bottom: 4px solid #1b5e20;
+  width: 230px;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-wrap {
+  background: url("../img/newsbg.jpg") center center no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  border-top: 6px solid #716437;
+}
+
+.feature-wrapper {
+  background: url("../img/feature-bg.jpg") center center no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  border-top: 6px solid #716437;
+}
+
+.feature {
+  display: flex;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #000;
+  align-items: center;
+}
+
+.toon {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.form, .flex-form {
+  display: flex;
+}
+
+.form {
+  align-items: center;
+  input[type=date] {
+    margin-right: 12px;
+  }
+  button {
+    margin-top: 24px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+  background-color:  darken(#57462F, 15%);
+  color: #91E800;
+  padding-left: 5%;
 }

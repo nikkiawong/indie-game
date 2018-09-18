@@ -88,6 +88,13 @@ h1 {
   color: #0D2501;
   text-shadow: 1px 1px 1px #91E800;
   margin-bottom: 24px;
+  transition: all 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
+.play-vid:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  color: #365A19;
 }
 
 .scroll {

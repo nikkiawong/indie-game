@@ -1,15 +1,26 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-.container, .background, .overlay  {
+.hero-wrap, .background, .overlay  {
   height: 100%;
   min-height: 100%;
 }
 
-html>body .container, html>body .background, html>body .overlay {
+html>body .hero-wrap, html>body .background, html>body .overlay {
   height: auto;
+}
+
+h1 {
+  font-family: 'Frijole', cursive;
+  color: #fff;
+  text-shadow: 2px 2px 4px #365A19;
+
+  font-size: 84px;
+  line-height: 98px;
 }
 
 .background {
@@ -20,4 +31,55 @@ html>body .container, html>body .background, html>body .overlay {
 .overlay {
   background: url("../img/hero-overlay.png") center center no-repeat;
   background-size: cover;
+}
+
+.hero-wrap {
+  position: relative;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  h3 {
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+  }
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  input[type=text] {
+    width: 250px;
+    margin-right: 22px;
+  }
+  button {
+    width: 120px;
+  }
+}
+
+.play-vid {
+  color: #0D2501;
+  text-shadow: 1px 1px 1px #91E800;
+  margin-bottom: 24px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  color: white;
+  transform: translate(-50%);
 }

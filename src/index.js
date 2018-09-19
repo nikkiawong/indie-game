@@ -1,4 +1,5 @@
 import "materialize-loader";
+import "materialize-css";
 import './scss/input.scss';
 import './css/output.css';
 // import $ from 'jquery';
@@ -120,4 +121,6 @@ $(function(){
         	600
         );
 	}
+
+  $('.modal').modal();
 });

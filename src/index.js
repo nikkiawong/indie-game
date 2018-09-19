@@ -42,7 +42,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top -250
         }, 600, function() {
           // Callback after animation
           // Must change focus!
@@ -116,7 +116,7 @@ $(function(){
 
 	function smoothScroll(target) {
         $('body,html').animate(
-        	{'scrollTop':target.offset().top},
+        	{'scrollTop':target.offset().top - 250},
         	600
         );
 	}

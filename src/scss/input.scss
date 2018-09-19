@@ -223,7 +223,7 @@ h1 {
   text-align: center;
   img {
     margin-bottom: 12px;
-    
+
     border-radius: 50%;
   }
 }
@@ -268,6 +268,33 @@ h1 {
   }
 }
 
+#main-toon {
+  width: 50%;
+  @media screen and (max-width: 1120px) {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feature, #signup, .news {
+    flex-direction: column;
+  }
+  #main-toon {
+    width: 50%;
+  }
+  #kwomp {
+    flex-direction: column-reverse;
+  }
+  .nav {
+    top: 15%;
+  }
+  .email input[type=text] {
+      width: 150px;
+  }
+  .scroll {
+    display: none;
+  }
+}
 
 @-webkit-keyframes glow {
   0% {opacity: 0.4}

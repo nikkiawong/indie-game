@@ -40,6 +40,29 @@ h1 {
   transform: scale(1.2);
 }
 
+.branch-parent {
+  position: relative;
+}
+
+.branch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-10%, -60%);
+  path {
+    fill: #4A3419;
+  }
+}
+
+.branch-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(10%, -60%);
+  path {
+    fill: #4A3419;
+  }
+}
 
 .knobly {
     padding-bottom: 14px;

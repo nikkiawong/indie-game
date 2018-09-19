@@ -1,3 +1,7 @@
+*:focus {
+    outline: none;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -23,6 +27,30 @@ h1 {
   font-size: 84px;
   line-height: 98px;
 }
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 1000;
+  transform: scale(1.2);
+}
+
+.knobly {
+    padding-bottom: 14px;
+    color: darken(#e6e6e6, 20%);
+    transition: all 0.5s ease;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.knobly:hover {
+  transform: scale(1.5);
+  color: white;
+}
+
 
 .col {
   margin: 12px;
